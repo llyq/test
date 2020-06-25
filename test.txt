@@ -1,0 +1,14 @@
+test_add_two (__main__.TestAdd) ... FAIL
+
+======================================================================
+FAIL: test_add_two (__main__.TestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:/PycharmProjects/API_AUTO/test_add.py", line 21, in test_add_two
+    self.assertEqual(2, result, "断言失败")
+AssertionError: 2 != 3 : 断言失败
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
