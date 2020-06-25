@@ -59,7 +59,7 @@ if __name__ == '__main__':
     # unittest.main()
     suite = unittest.TestSuite()
     loader = unittest.TestLoader()
-    suite.addTest(loader.loadTestsFromTestCase(TestAdd))
+    suite.addTest(loader.loadTestsFromTestCase(TestAdd1))
     # file = open("test.txt", "w+", encoding='UTF-8')
     # 执行上下文管理器
     # with open("test.txt", "w+", encoding='UTF-8') as file:
