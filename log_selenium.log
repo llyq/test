@@ -1,0 +1,171 @@
+[1593162468.018][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 1895
+[1593162468.018][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1593162468.535][INFO]: [769503693ba9e59de56d6371bdee2a4c] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1593162468.540][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1593162468.540][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1593162468.546][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
+[1593162468.546][INFO]: Launching chrome: "C:\Users\雨晴\AppData\Local\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\雨晴\AppData\Local\Temp\scoped_dir9416_1091738867\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\雨晴\AppData\Local\Temp\scoped_dir9416_89121887" data:,
+[1593162469.084][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1593162471.120][INFO]: [769503693ba9e59de56d6371bdee2a4c] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "83.0.4103.97",
+      "chrome": {
+         "chromedriverVersion": "83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})",
+         "userDataDir": "C:\\Users\\雨晴\\AppData\\Local\\Temp\\scoped_dir9416_89121887"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:1902"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "769503693ba9e59de56d6371bdee2a4c"
+}
+[1593162471.121][INFO]: [769503693ba9e59de56d6371bdee2a4c] COMMAND Navigate {
+   "url": "http://www.baidu.com"
+}
+[1593162471.121][INFO]: Waiting for pending navigations...
+[1593162471.122][INFO]: Done waiting for pending navigations. Status: ok
+[1593162471.217][INFO]: Waiting for pending navigations...
+[1593162471.377][INFO]: Done waiting for pending navigations. Status: ok
+[1593162471.377][INFO]: [769503693ba9e59de56d6371bdee2a4c] RESPONSE Navigate
+[1593162471.378][INFO]: [769503693ba9e59de56d6371bdee2a4c] COMMAND MaximizeWindow {
+
+}
+[1593162471.378][INFO]: Waiting for pending navigations...
+[1593162471.385][INFO]: Done waiting for pending navigations. Status: ok
+[1593162471.386][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1593162473.531][INFO]: Waiting for pending navigations...
+[1593162473.531][INFO]: Done waiting for pending navigations. Status: ok
+[1593162473.531][INFO]: [769503693ba9e59de56d6371bdee2a4c] RESPONSE MaximizeWindow {
+   "height": 1056,
+   "width": 1936,
+   "x": -8,
+   "y": -8
+}
+[1593162473.532][INFO]: [769503693ba9e59de56d6371bdee2a4c] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[id=\"kw\"]"
+}
+[1593162473.532][INFO]: Waiting for pending navigations...
+[1593162473.533][INFO]: Done waiting for pending navigations. Status: ok
+[1593162473.539][INFO]: Waiting for pending navigations...
+[1593162473.539][INFO]: Done waiting for pending navigations. Status: ok
+[1593162473.539][INFO]: [769503693ba9e59de56d6371bdee2a4c] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "fce4bd1a-c13e-4fd7-bc07-2685020156bc"
+}
+[1593162473.540][INFO]: [769503693ba9e59de56d6371bdee2a4c] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "fce4bd1a-c13e-4fd7-bc07-2685020156bc",
+      "element-6066-11e4-a52e-4f735466cecf": "fce4bd1a-c13e-4fd7-bc07-2685020156bc"
+   }, "class" ],
+   "script": "return (function(){return function(){var d=this;function f(a){return\"string\"==typeof a};function h(a,b){this.code=a;this.a=l[a]||m;this.message=b||\"\";a=this.a.replace(/((?:^|\\s+)[a-z])/g,function(a..."
+}
+[1593162473.540][INFO]: Waiting for pending navigations...
+[1593162473.540][INFO]: Done waiting for pending navigations. Status: ok
+[1593162473.543][INFO]: Waiting for pending navigations...
+[1593162473.543][INFO]: Done waiting for pending navigations. Status: ok
+[1593162473.543][INFO]: [769503693ba9e59de56d6371bdee2a4c] RESPONSE ExecuteScript "s_ipt"
+[1593162473.543][INFO]: [769503693ba9e59de56d6371bdee2a4c] COMMAND Quit {
+
+}
+[1593162473.568][INFO]: [769503693ba9e59de56d6371bdee2a4c] RESPONSE Quit
