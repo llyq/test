@@ -15,7 +15,7 @@ from log import MyLogger
 #     return sum
 
 my_log = MyLogger()
-test_data = [[1, 3], [4, 16]]
+test_data = [[1, 3], [4, 146]]
 
 @ddt.ddt
 class TestAdd(unittest.TestCase):
