@@ -66,7 +66,7 @@ if __name__ == '__main__':
     #     runner = unittest.TextTestRunner(stream=file, verbosity=2)  #0  1  2最详细
     #     runner.run(suite)
     # print(file.closed)
-    with open("test_report.html", "wb") as file:
+    with open("../../test_report.html", "wb") as file:
         runner = HTMLTestRunnerNew.HTMLTestRunner(stream=file, verbosity=2, title="测试报告title", description="测试报告desc",
                                                   tester="雨晴")
         runner.run(suite)
