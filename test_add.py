@@ -10,9 +10,9 @@ import ddt
 from log import MyLogger
 
 
-def add(num1, num2):
-    sum = num1 + num2
-    return sum
+# def add(num1, num2):
+#     sum = num1 + num2
+#     return sum
 
 my_log = MyLogger()
 test_data = [[1, 3], [4, 6]]
@@ -46,7 +46,7 @@ class TestAdd(unittest.TestCase):
         print(result)
         # 期望值与实际值比较，一般期望值放第一个 msg用例执行失败才展示
         try:
-            self.assertEqual(2, result1, "断言失败")
+            self.assertEqual(2, result, "断言失败")
         except AssertionError as e:
             print("出错了 {}".format(e))
             raise e
