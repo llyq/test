@@ -116,18 +116,18 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">测试报告title</h1>
 <p class='attribute'><strong>测试人员 : </strong> 雨晴</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-06-26 12:24:24</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.001000</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 4，通过 3，失败 1，通过率= 75.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-06-26 13:04:29</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 4，通过 2，错误 2，通过率= 50.00%</p>
 
 <p class='description'>测试报告desc</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 75.00% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 3 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 50.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 4 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -148,29 +148,32 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='failClass warning'>
+<tr class='errorClass warning'>
     <td>TestAdd</td>
     <td class="text-center">4</td>
-    <td class="text-center">3</td>
-    <td class="text-center">1</td>
+    <td class="text-center">2</td>
     <td class="text-center">0</td>
+    <td class="text-center">2</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',4)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_add_two</div></td>
+<tr id='ft1_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_add_two</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
-    <div id='div_pt1_1' class="collapse">  -->
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
-    <div id='div_pt1_1' class="collapse in" align="left">
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse in" align="left">
     <pre>
     
-pt1_1: 执行用例前置
-3
+ft1_1: 执行用例前置
 执行用例后置
+Traceback (most recent call last):
+  File "D:/PycharmProjects/test/test_add.py", line 35, in test_add_two
+    result = add(1, 2)
+NameError: name 'add' is not defined
 
 
     </pre>
@@ -179,26 +182,22 @@ pt1_1: 执行用例前置
 </tr>
 
 <tr id='ft1_2' class='none'>
-    <td class='failCase'><div class='testcase'>test_add_two22</div></td>
+    <td class='errorCase'><div class='testcase'>test_add_two22</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
     <div id='div_ft1_2' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
     <div id='div_ft1_2' class="collapse in" align="left">
     <pre>
     
 ft1_2: 执行用例前置
-3
-出错了 2 != 3 : 断言失败
 执行用例后置
 Traceback (most recent call last):
-  File "D:/PycharmProjects/test/test_add.py", line 52, in test_add_two22
-    raise e
-  File "D:/PycharmProjects/test/test_add.py", line 49, in test_add_two22
-    self.assertEqual(2, result, "断言失败")
-AssertionError: 2 != 3 : 断言失败
+  File "D:/PycharmProjects/test/test_add.py", line 45, in test_add_two22
+    result = add(1, 2)
+NameError: name 'add' is not defined
 
 
     </pre>
@@ -229,7 +228,7 @@ pt1_3: 执行用例前置
 </tr>
 
 <tr id='pt1_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_print_data_2__4__6_</div></td>
+    <td class='passCase'><div class='testcase'>test_print_data_2__4__16_</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
@@ -241,7 +240,7 @@ pt1_3: 执行用例前置
     
 pt1_4: 执行用例前置
 4
-6
+16
 执行用例后置
 
 
@@ -253,10 +252,10 @@ pt1_4: 执行用例前置
 <tr id='total_row' class="text-center active">
     <td>总计</td>
     <td>4</td>
-    <td>3</td>
-    <td>1</td>
+    <td>2</td>
     <td>0</td>
-    <td>通过率：75.00%</td>
+    <td>2</td>
+    <td>通过率：50.00%</td>
 </tr>
 </table>
 
