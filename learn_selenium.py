@@ -22,7 +22,7 @@ driver.maximize_window()
 # print(driver.current_url)
 # print(driver.current_window_handle)
 ele = driver.find_element_by_id('kw')
-# print(ele)
+print(ele)
 print(ele.get_attribute('class'))
 
 #关闭当前窗口
